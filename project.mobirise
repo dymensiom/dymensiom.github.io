@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Dymension",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#24201f"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/dymension-1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://dymensiom.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://dymensiom.github.io/sitemap.xml",
+    "mbrsiteDomain": "aaes1aderm",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Dymension™ | Home Official Site",
+        "meta_descr": "Dymension is a home for easily deployable and lightning fast app-chains, called RollApps.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/dymension.png\" alt=\"Dymension\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "udXfCtloan",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f7f7f7",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#f7f7f7"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#24201f\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#24201f\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Dymension: Home of the RollApps</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Dymension Crypto: Unlocking the Future of Decentralized Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving world of blockchain and cryptocurrency, one name has been steadily gaining traction: <a href=\"https://dymensiom.github.io/\" class=\"text-primary\">Dymension</a>. This innovative startup, founded in 2017, has set out to redefine the landscape of decentralized finance (DeFi) by leveraging the power of cryptography and advanced technological solutions.<br><br>Dymension's journey began with a simple yet ambitious goal: to create a cryptocurrency that could not only serve as a secure and efficient medium of exchange, but also as a foundation for a robust and scalable DeFi ecosystem. Recognizing the limitations of existing blockchain networks, the <a href=\"https://dymension.xyz/\" class=\"text-primary\">Dymension</a> team set out to design a protocol that would address the pressing issues of scalability, interoperability, and user-friendliness.<br><br>At the heart of Dymension's innovation is its proprietary consensus mechanism, known as Dynamix. Unlike the energy-intensive proof-of-work systems used by Bitcoin and Ethereum, Dynamix employs a unique proof-of-stake approach that prioritizes transaction speed, low fees, and environmental sustainability.<br><br>\"Dymension was born out of a desire to create a cryptocurrency that could truly scale and meet the demands of the 21st-century economy,\" says Dymension's co-founder and CEO, Aisha Sharma. \"Dynamix is our answer to the challenges that have long plagued the blockchain space, and it's a crucial building block for the DeFi applications we're developing.\"<br><br>One of the key features of Dynamix is its ability to achieve near-instant transaction confirmations, allowing for seamless, real-time interactions within the Dymension ecosystem. This, coupled with its low transaction fees, has made Dymension an attractive option for a wide range of DeFi use cases, from decentralized exchanges and lending platforms to stablecoins and synthetic assets.<br><br>\"Speed and cost are two of the biggest pain points for users in the current DeFi landscape,\" says Sharma. \"With Dynamix, we're able to offer a level of performance and efficiency that simply isn't possible with legacy blockchain networks. This opens up a world of new opportunities for innovation and growth.\"<br><br>But Dymension's ambitions extend far beyond just the development of a high-performance cryptocurrency. The company has also been actively building out a comprehensive DeFi ecosystem, complete with a suite of decentralized applications (dApps) and protocols designed to empower users and unlock new financial possibilities.<br><br>One of Dymension's flagship products is its decentralized exchange, DyEx. Leveraging the speed and scalability of the Dynamix network, DyEx offers a seamless and secure trading experience, with advanced features such as automated market-making, liquidity provisioning, and cross-chain asset interoperability.<br><br>\"DyEx is more than just a trading platform,\" says Sharma. \"It's a gateway to the broader Dymension ecosystem, where users can access a wide range of DeFi services and products, all underpinned by the same secure and efficient blockchain infrastructure.\"<br><br>Another key component of the Dymension ecosystem is its decentralized lending and borrowing protocol, DyLend. By enabling peer-to-peer lending and borrowing of digital assets, DyLend aims to provide users with greater financial autonomy and access to credit, without the need for centralized intermediaries.<br><br>\"DeFi is all about empowering individuals and creating more inclusive financial systems,\" says Sharma. \"With DyLend, we're giving users the tools they need to manage their own financial resources, whether it's accessing loans, earning yield on their holdings, or exploring new investment opportunities.\"<br><br>Dymension's commitment to innovation and user-centricity extends to its approach to stablecoins. The company has developed its own stablecoin, DyUSD, which is designed to provide a stable, reliable, and transparent means of storing and transacting value within the Dymension ecosystem.<br><br>\"Stablecoins are a critical component of the DeFi landscape, but many existing solutions have been plagued by issues like lack of transparency, centralization, and volatility,\" says Sharma. \"With DyUSD, we've created a stablecoin that is fully collateralized, algorithmically managed, and integrated seamlessly with the broader Dymension ecosystem.\"<br><br>One of the unique features of DyUSD is its ability to automatically adjust its peg to the US dollar based on market conditions, ensuring price stability and mitigating the risk of sudden depegging events. This, combined with its decentralized governance model and robust security protocols, has made DyUSD a popular choice for DeFi users seeking a reliable store of value.<br><br>But Dymension's ambitions don't stop there. The company has also been actively exploring the potential of synthetic assets, which allow users to gain exposure to a wide range of real-world assets, from stocks and commodities to indices and derivatives, without the need for direct ownership.<br><br>\"Synthetic assets are a game-changer in the DeFi space, as they open up new avenues for investment, hedging, and risk management,\" says Sharma. \"With Dymension's advanced cryptographic techniques and our commitment to user-friendliness, we believe we can unlock the full potential of synthetic assets and bring them to the mainstream.\"<br><br>One such synthetic asset product developed by Dymension is DyGold, a token that allows users to gain exposure to the price of physical gold without the logistical and security challenges of storing and transacting with the precious metal.<br><br>\"DyGold is just the beginning,\" says Sharma. \"We're constantly exploring new ways to leverage the power of synthetic assets to create innovative financial products that can solve real-world problems and empower our users.\"<br><br>As Dymension continues to expand its ecosystem and push the boundaries of DeFi, the company has also been at the forefront of efforts to promote greater interoperability and cross-chain collaboration within the broader blockchain space.<br><br>\"We firmly believe that the future of cryptocurrency and DeFi lies in a multi-chain world, where different blockchain networks and protocols can seamlessly interact and exchange value,\" says Sharma. \"That's why we've been actively working with other leading blockchain projects to develop standards and protocols that can facilitate seamless cross-chain transactions and asset transfers.\"<br><br>One such initiative is Dymension's involvement in the development of the Inter-Blockchain Communication (IBC) protocol, which enables the transfer of tokens and data between different blockchain networks. By participating in this and other interoperability efforts, Dymension hopes to create a more interconnected and inclusive DeFi ecosystem.<br><br>\"Interoperability is crucial for the long-term success and adoption of DeFi,\" says Sharma. \"By breaking down the walls between different blockchain networks, we can create a more open, accessible, and thriving financial system that benefits users, developers, and the broader crypto community.\"<br><br>As Dymension continues to make waves in the DeFi space, the company has also been mindful of the need to address the growing concerns around sustainability and environmental impact within the cryptocurrency industry. To this end, Dymension has made a concerted effort to prioritize energy-efficient and eco-friendly practices within its protocol and operations.<br><br>\"We recognize that the energy consumption and carbon footprint of some blockchain networks have become a significant concern, both for users and for the broader public,\" says Sharma. \"With Dynamix, we've designed a consensus mechanism that is inherently more energy-efficient than proof-of-work, and we're continuously exploring ways to further reduce our environmental impact.\"<br><br>This commitment to sustainability has not gone unnoticed, with Dymension receiving praise from environmental organizations and sustainability-minded investors for its efforts to promote green finance and responsible technological development.<br><br>\"Dymension is not just about creating the next big thing in DeFi,\" says Sharma. \"It's about building a future-proof financial system that is aligned with the values of environmental stewardship, social responsibility, and equitable opportunity. That's the kind of future we're working towards, and we're excited to see where this journey takes us.\"<br><br>As the cryptocurrency and DeFi landscape continues to evolve, Dymension's innovative approach and commitment to user-centric design, interoperability, and sustainability have positioned the company as a leading contender in the race to shape the future of decentralized finance. With a growing ecosystem of DeFi applications, a robust and scalable blockchain infrastructure, and a dedicated team of experts, Dymension is poised to play a pivotal role in the ongoing transformation of the global financial system.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "udXfCJExP5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
